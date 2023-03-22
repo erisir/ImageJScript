@@ -6,7 +6,6 @@ prominence = 30;
 
 imp = IJ.getImage()  
 stackSize = imp.getImageStackSize();
-#stackSize =3;
 for i in range(stackSize-1):     
 	imp.setSlice(i)
 	IJ.run("Find Maxima...", "prominence="+str(prominence)+" output=Count");	
